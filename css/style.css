@@ -1,0 +1,399 @@
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+}
+
+#wrapper {
+
+    width: 1000px; 
+
+    margin : 0px auto; /*center of page*/
+
+}
+
+a {
+
+    text-decoration: none; /*no line under the links*/
+
+    color: white;
+
+    font-family: 'Quicksand';
+
+    font-size: 20px;
+
+}
+
+
+header, main, footer, nav, aside, section, div  {
+
+    display: block;
+
+}
+
+header {
+
+height: 192px;
+
+background-color: #D6D6D6;
+
+display: flex;
+
+align-items: center;
+
+justify-content: center;
+
+}
+
+
+#logo {
+
+    display: block;
+
+    background: url("../images/logo.png");
+
+    background-repeat: no-repeat;
+
+    background-size: cover;
+
+    height: 90px;
+
+    width: 90px;
+
+
+}
+
+#content-area {
+
+    display: flex;
+}
+
+
+#layout1 > nav {
+
+    height: 65px;
+
+    background-color: black;
+
+    display: flex; /*next to each other*/
+
+    align-items: center;
+
+    text-decoration: none;
+
+
+}
+
+#layout1 > nav > ul {
+
+    display: flex; /*next to each other*/
+
+    width: 1000px;
+
+    margin: 0 auto;
+
+
+}
+
+nav :hover {
+
+    color: rgb(165, 163, 163);
+
+}
+    
+    
+#layout1 > nav > ul > li:first-child {
+        
+    background-color: teal;
+
+    margin-left: 37px;
+
+}
+
+#layout1 > nav > ul > li  {
+
+    display: list-item;
+
+    list-style: none; /*no dots near the list*/
+
+}
+
+#layout1 > nav > ul > li > a {
+
+
+    display: flex;
+
+    width: 235px;
+
+    height: 40px;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+
+}
+
+#layout1 main {
+
+    height: 695px;
+
+    width: 755px;
+
+    position: relative;
+}
+
+#layout1 .container-right , .container-left {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: space-between;
+
+    align-content: space-between;
+
+    height: 235px;
+
+    width: 235px;
+
+}
+
+
+#layout1 .container-right section {
+
+    height: 100px;
+
+    width: 100px;
+
+    background-color: rgb(185, 54, 54);
+
+
+}
+
+#layout1 .container-left section {
+
+    height: 100px;
+
+    width: 100px;
+
+    background-color: rgb(185, 54, 54);
+
+}
+
+#layout1 .container-left {
+
+    margin-left: 37px;
+
+    padding-top: 25px;
+
+}
+
+body#layout1 .container-right {
+
+    position: absolute;
+
+    bottom: 25px;
+
+    right: 25px;
+
+}
+
+#layout1 aside {
+
+    width: 244px;
+
+    background-color: #EEEEEE;
+
+    position: relative;
+}
+
+#layout1 aside section {
+
+
+    height: 60px;
+
+    width: 148px;
+
+    background-color: rgb(185, 54, 54);
+
+    top: 200px;
+
+    right:15px;
+
+    position: absolute;
+
+} 
+
+
+#layout1 footer {
+
+    height: 49px;
+
+    background-color: #D6D6D6;
+}
+
+#layout2 nav {
+
+    width: 145px;
+
+    background-color: black;  
+    
+    height: 3000px;
+
+
+}
+
+#layout2 nav li {
+
+   width: 145px;
+
+   height: 60px;
+
+   display: flex;
+
+   align-items: center;
+
+
+}
+
+#layout2 nav li:nth-child(2) {
+
+    background-color: teal;
+
+}
+
+#layout2 nav li a{
+
+    margin-left: 5px;
+ 
+}
+
+#layout2 .container-aside {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: space-between;
+
+    align-content: space-between;
+
+    height: 235px;
+
+    width: 235px;
+
+}
+
+#layout2 aside {
+
+    width:260px;
+
+    height: 3000px;
+
+    background-color: #EEEEEE;
+
+    position: relative;
+
+}
+ 
+
+.container-aside {
+
+    position: absolute;
+
+    margin-left: 10px;
+
+    top: 509px;
+
+}
+
+#layout2 .container-aside section {
+
+    height: 100px;
+
+    width: 100px;
+
+    background-color: rgb(4, 85, 4);
+
+}
+
+#formain {
+
+   height: 3000px;
+
+}
+
+#layout2 main {
+
+    display: flex;
+    
+    flex-direction: column;
+
+    flex-wrap: wrap;
+
+    width: 596px;
+
+    height: 810px;
+
+    margin-left:5px;
+
+}
+
+#layout2 main section:nth-child(1){
+
+    height: 325px;
+}  
+
+#layout2 main > section:nth-child(2){
+
+    height: 412px;
+}    
+
+
+#layout2 main section:nth-child(3){
+
+    height: 254px;
+}    
+
+
+#layout2 main section:nth-child(4){
+
+    height: 365px;
+}    
+
+
+
+#layout2 main section {
+
+    background-color: rgb(4, 85, 4);
+
+    width: 270px;
+
+    margin-top: 20px;
+
+    margin-left: 15px;
+
+    
+}
+
+#layout2 footer {
+
+    width: 100%;
+
+    position: fixed;
+
+    background-color: #D6D6D6;
+
+    height: 50px;
+
+    bottom: 0;
+
+}
+
+
+
