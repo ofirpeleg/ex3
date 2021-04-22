@@ -97,7 +97,7 @@ justify-content: center;
 
 }
 
-nav :hover {
+#layout1 nav :hover {
 
     color: rgb(165, 163, 163);
 
@@ -394,6 +394,139 @@ body#layout1 .container-right {
     bottom: 0;
 
 }
+
+
+#layout3 nav {
+
+    height: 65px;
+
+    background-color: black;
+
+    display: flex; 
+
+    align-items: center;
+
+}
+
+#layout3 nav ul {
+    
+    display: flex; /*next to each other*/
+
+    margin:0 auto;
+
+    justify-content: center;
+
+}
+
+
+
+#layout3 nav :hover {
+
+    color: rgb(165, 163, 163);
+}
+    
+
+    
+#layout3 nav ul li:nth-child(3) {
+        
+    background-color: teal;
+
+}
+
+#layout3 nav ul li  {
+
+
+    list-style: none; /*no dots near the list*/
+
+    color: white;
+
+}
+
+#layout3 nav ul li a {
+
+
+    display: flex;
+
+    width: 230px;
+
+    height: 40px;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+
+}
+
+#layout3 footer {
+
+    height: 50px;
+
+    background-color: #D6D6D6;
+}
+
+
+#layout3  main { 
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+}
+
+#layout3 section {
+
+    width: 333px;
+
+    height: 348px;
+
+    cursor: pointer;
+
+}
+
+@media (max-width: 1420px) { /* MOBILE - what happends here down only affect 1420px width max!*/
+
+   #layout3 main {
+
+    justify-content: center;
+
+    width: 666px; 
+
+    margin : 0px auto; /*center of page*/
+
+   }
+
+   #layout3 header, nav {
+
+    width: 666px; 
+
+    margin : 0px auto; /*center of page*/
+
+
+   }
+
+   #layout3 header, nav {
+
+    width: 666px; 
+
+    margin : 0px auto; /*center of page*/
+
+
+   }
+
+   #layout3 nav ul li a {
+
+
+    display: flex;
+
+    width: 200px;
+
+    }
+
+}
+
 
 
 
