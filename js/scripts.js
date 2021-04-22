@@ -2,6 +2,7 @@ var familyName = "Peleg";
 var counterOfsections = 0;
 
 
+
 function generateRandomColor() {
     var letters = '0123456789ABCDEF';
     var color = '#';
@@ -15,17 +16,27 @@ function generateRandomColor() {
 
 function createSections() {
 
-    var newSecObj = document.createElement("section");
+    var newSec = document.createElement("section");
     var mainObj = document.getElementById("main");
 
-    mainObj.appendChild(newSecObj);
-    newSecObj.style.backgroundColor = generateRandomColor();
-    counterOfsections++;
+    mainObj.appendChild(newSec);
+    newSec.style.backgroundColor = generateRandomColor();
+    counterOfsections++;  
 
+    if(counterOfsections == 1) {
+        newSec.className = "first";
+        newSec.style.backgroundImage = "url('images/plus.svg')";
 
+        newSec.onclick = function() {
+            createSections();
+        }
+    }    
 
-}
-
+    if(counterOfsections % 3 == 0) {
+            newSec.style.backgroundImage = "url('images/star.png')";
+        }    
+    }
+  
 
 function initalize() { 
 
@@ -36,5 +47,4 @@ function initalize() {
     }   
 
 }    
-
 
